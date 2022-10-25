@@ -47,11 +47,11 @@ UPDATE_FREQ = 4
 # DISCOUNT FACTOR - NATURE (0.99) - MEDICAL (0.9)
 GAMMA = 0.9 #0.99
 # REPLAY MEMORY SIZE - NATURE (1e6) - MEDICAL (1e5 view-patches)
-MEMORY_SIZE = 1e5#6
+MEMORY_SIZE = 1e4#5#6
 # consume at least 1e6 * 27 * 27 * 27 bytes
 INIT_MEMORY_SIZE = MEMORY_SIZE // 20 #5e4
-# each epoch is 100k played frames
-STEPS_PER_EPOCH = 10000 // UPDATE_FREQ * 10
+# each epoch is 100k played frames - 1000 30 minutes on colab
+STEPS_PER_EPOCH = 1000 // UPDATE_FREQ * 10
 # num training epochs in between model evaluations
 EPOCHS_PER_EVAL = 2
 # the number of episodes to run during evaluation
