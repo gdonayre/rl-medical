@@ -1,0 +1,15 @@
+{
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": ["--task", "train", "--algo", "DQN", "--files", "./data/filenames/image_files_new.txt", "./data/filenames/landmark_files_new.txt"],
+            "cwd": "${fileDirname}"
+        }
+    ]
+}
