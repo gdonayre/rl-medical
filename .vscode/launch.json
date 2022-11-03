@@ -1,14 +1,42 @@
 {
-
     "version": "0.2.0",
     "configurations": [
+        {
+            "name": "Python: Eval 27500",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--task",
+                "eval",
+                "--algo",
+                "DQN",
+                "--load",
+                "data/models/DQN_multiscale_huellas_ROI_45_45_45/model-25000",
+                "--files",
+                "./data/filenames/image_files_new.txt",
+                "./data/filenames/landmark_files_new.txt"
+            ],
+            "cwd": "${fileDirname}"
+        },
         {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": ["--task", "train", "--algo", "DQN", "--files", "./data/filenames/image_files_new.txt", "./data/filenames/landmark_files_new.txt"],
+            "args": [
+                "--task",
+                "eval",
+                "--algo",
+                "DQN",
+                "--load",
+                "data/models/DQN_multiscale_huellas_ROI_45_45_45/model-27500",
+                "--files",
+                "./data/filenames/image_files_new.txt",
+                "./data/filenames/landmark_files_new.txt"
+            ],
             "cwd": "${fileDirname}"
         }
     ]
