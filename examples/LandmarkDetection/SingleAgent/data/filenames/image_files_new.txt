@@ -7,3 +7,8 @@
 ./data/images_new/2-3.nii.gz
 ./data/images_new/2-4.nii.gz
 ./data/images_new/2-5.nii.gz
+./data/images_new/3-1.nii.gz
+./data/images_new/3-2.nii.gz
+./data/images_new/3-3.nii.gz
+./data/images_new/3-4.nii.gz
+./data/images_new/3-5.nii.gz
